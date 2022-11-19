@@ -1,0 +1,203 @@
+div { height: auto; /*if more info comes on the page, it will stretch down*/ width: 1000px; margin: 0 auto; /*this will cause the div to be in the center*/ }
+
+body {
+    background: url("abstract_circles_background_1.jpg");
+}
+
+.bg-img{
+  background-image: url("");
+  min-height: 220px;
+  max-width: 2000px;
+  margin-top: -8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  margin-top: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.headshot {
+	flex-shrink: 0;
+	margin-right: 100px;
+    margin-top: -30px;
+    margin-left: 300px;
+	border: calc(1px + 0.2vw) solid black;
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	background-size: cover;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.headshot-1 {
+    background: black;
+	border-radius: 25%;
+	background-image: var(--img-url), linear-gradient(#f9f047, #0fd850);
+}
+
+p {
+    color: black;
+    text-align: justify;
+    margin-top: -20px;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 1900px;
+}
+
+h2 {
+    
+    color: black;
+    margin-left: 200px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+h3{
+    
+    color: black;
+    margin-left: 200px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    
+}
+
+li{
+    float:right;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-align: center;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropmenu {
+    float:left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropmenu .dropabc {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: green;
+  text-align: center;
+}
+
+.navbar a:hover, .dropmenu:hover .dropabc, .dropabc:focus {
+  background-color: green;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropmenu-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropmenu-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropmenu-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.Text {
+    border: calc(5px + 0.2vw) solid black;
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	background-size: cover;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+	border-radius: 25%;
+	padding: 25px; 
+	height: 500px; 
+	width: 550px;
+}

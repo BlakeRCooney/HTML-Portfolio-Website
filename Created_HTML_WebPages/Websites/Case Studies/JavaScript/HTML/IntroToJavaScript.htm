@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html> 
+        <!-- //JAVASCRIPT HTML ASSIGNMENT//
+        //Author: Blake Cooney//
+        //Date: 11/30/2021//
+        -->
+<head>
+        <meta charset=utf-8 />
+       
+                <title>JavaScript program to calculate Sum ane the Multiplication of two numbers </title>
+
+
+            <style type="text/css">
+            body {
+                background: #1f1d21;
+                margin-left: 800px;
+                margin-top: 200px;
+                color: lime;
+                display: flex;
+                font-size: 26px;
+            }
+            
+            .button {
+                background-color: #4CAF50;
+                border: 2px solid #4CAF50;
+                border-radius: 8px;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 12px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            
+            .button:hover {
+                background-color: #4CAF50;
+                color: black;
+                padding-right: 25px;
+            }
+            
+            .button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+
+            .button:hover span:after {
+               opacity: 1;
+               right: 0;
+            }
+            </style>
+            
+            <script type="text/javascript">
+            
+    function getValues(){
+            var result = {
+                X: 0;
+                Y: 0;
+            }
+
+
+    function addBy()
+    {
+        var X = document.getElementById("firstNumber").value;
+        var Y = document.getElementById("secondNumber").value;
+        var document.getElementById("addResult").innerHTML = parseInt(X) + parseInt(Y);
+        var additionByMessage = "The sum of " + X + " and " + Y + " equals: " + parseInt(X) + parseInt(Y);
+        document.getElementById("result-descriptionAdd").innerHTML = additionByMessage.toString();
+    }
+    
+    function subtractBy()
+    {
+        var X = document.getElementById("firstNumber").value;
+        var Y = document.getElementById("secondNumber").value;
+        document.getElementById("subResult").innerHTML = parseInt(X) - parseInt(Y);
+        var subtractByMessage = "The sum of " + X + " and " + Y + " equals: " + parseInt(X) - parseInt(Y);
+        document.getElementById("result-description-Sub").innerHTML = subtractByMessage.toString();
+    }
+    
+    function multiplyBy()
+    {
+        var X = document.getElementById("firstNumber").value;
+        var Y = document.getElementById("secondNumber").value;
+        document.getElementById("multiResult").innerHTML = parseInt(X) * parseInt(Y);
+        var multiplyByMessage = "The sum of " + X + " and " + Y + " equals: " + parseInt(X) * parseInt(Y);
+        document.getElementById("result-description-Multi").innerHTML = multiplyByMessage.toString();
+    }
+    
+    function dividedBy()
+    {
+        var X = document.getElementById("firstNumber").value;
+        var Y = document.getElementById("secondNumber").value;
+        document.getElementById("divisionResult").innerHTML = parseInt(X) / parseInt(Y); 
+        var divideByMessage = "The sum of " + X + " and " + Y + " equals: " + parseInt(X) / parseInt(Y);
+        document.getElementById("result-description-Divide").innerHTML = divideByMessage.toString();
+    }
+    
+</script>
+</head>
+
+<body>
+    
+    
+        <form>
+            
+            First Number - X : <input type="number" id="firstNumber" /><br>
+            Second Number - Y : <input type="number" id="secondNumber" /><br>
+                 
+                <input a href="#" class="button" style="vertical-align:middle" type="button" onClick="addBy()" Value="Add" />
+                <input a href="#" class="button" style="vertical-align:middle" type="button" onClick="subtractBy()" Value="Subtract" />
+                <input a href="#" class="button" style="vertical-align:middle" type="button" onClick="multiplyBy()" Value="Multiply" />
+                <input a href="#" class="button" style="vertical-align:middle" type="button" onClick="dividedBy()" Value="Divide" />
+                
+                <h3>
+                <br>Addition:
+                <span id = "addResult"></span> <span id="result-description-Add"></span>
+                 <hr>
+                <br>Subtracton:
+                <span id = "subResult"></span> <span id="result-description-Sub"></span>
+                <hr>
+                <br>Multiplication:
+                <span id = "multiResult"></span> <span id="result-description-Multi"></span>
+                <hr>
+                <br>Division:
+                <span id = "divisionResult"></span> <span id="result-description-Divide"></span>
+                </h3>
+               
+                
+        </form>
+            
+
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html> 
+        <!-- //JAVASCRIPT HTML ASSIGNMENT//
+        //Author: Blake Cooney//
+        //Date: 11/30/2021//
+        -->
+<head>
+        <meta charset=utf-8 />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+       
+                <title>JavaScript program to calculate addition, subtraction, multiplication and division of two numbers. </title>
+        <style type="text/css">
+        
+            body {
+                background: #1f1d21;
+                margin-left: 800px;
+                margin-top: 200px;
+                color: lime;
+                display: flex;
+                font-size: 26px;
+            }
+            
+           .top-centered {
+                position:absolute;
+                top: 0px;
+                left: 500px;
+                z-index: 1;
+            }
+            
+            .none {
+                position:left;
+                top: 0px;
+                left: 0px;
+                z-index: 1;
+            }
+        
+            
+            .button {
+                background-color: #4CAF50;
+                border: 2px solid #4CAF50;
+                border-radius: 8px;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 12px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            
+            .button:hover {
+                background-color: #4CAF50;
+                color: black;
+                padding-right: 25px;
+            }
+            
+            .button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+
+            .button:hover span:after {
+               opacity: 1;
+               right: 0;
+            }
+            </style>
+            
+</head>
+
+<body>
+   
+
+    <script>
+      function getValues(){
+            var result = {
+                x: 0,
+                y: 0
+            };
+
+            var xElm = document.getElementById("input-x");
+            var yElm = document.getElementById("input-y");
+
+            var xParse = Number(xElm.value);
+            if(!isNaN(xParse)){
+                result.x = xParse;
+            }
+
+            var yParse = Number(yElm.value);
+            if(!isNaN(yParse)){
+                result.y = yParse;
+            }
+
+            return result;
+      }
+
+      function doThingOne(){
+        var vals = getValues();
+        // vals.x already parsed as int
+        // vals.y already parsed as int
+        var res = vals.x + vals.y;
+
+        document.getElementById("result").innerHTML = res.toString();
+
+        var desc = "";
+
+        if(vals.x > vals.y){
+            desc = ": X is Geater than Y";
+        }else if(vals.x == vals.y){
+            desc = ": X is Equivelent to Y";
+        }else{
+            desc = ": Y is Greater than X";
+        }
+
+        document.getElementById("result-description").innerHTML = desc;
+      }
+      
+      function getValues(){
+            var result = {
+                x: 0,
+                y: 0
+            };
+
+            var xElm = document.getElementById("input-x");
+            var yElm = document.getElementById("input-y");
+
+            var xParse = Number(xElm.value);
+            if(!isNaN(xParse)){
+                result.x = xParse;
+            }
+
+            var yParse = Number(yElm.value);
+            if(!isNaN(yParse)){
+                result.y = yParse;
+            }
+
+            return result;
+      }
+
+      function doThingTwo(){
+        var vals = getValues();
+        // vals.x already parsed as int
+        // vals.y already parsed as int
+        var res = vals.x - vals.y;
+
+        document.getElementById("sub-result").innerHTML = res.toString();
+
+        var desc = "";
+
+        if(vals.x > vals.y){
+            desc = ": X is Geater than Y";
+        }else if(vals.x == vals.y){
+            desc = ": X is Equivelent to Y";
+        }else{
+            desc = ": Y is Greater than X";
+        }
+
+        document.getElementById("sub-result-description").innerHTML = desc;
+      }
+      
+      function getValues(){
+            var result = {
+                x: 0,
+                y: 0
+            };
+
+            var xElm = document.getElementById("input-x");
+            var yElm = document.getElementById("input-y");
+
+            var xParse = Number(xElm.value);
+            if(!isNaN(xParse)){
+                result.x = xParse;
+            }
+
+            var yParse = Number(yElm.value);
+            if(!isNaN(yParse)){
+                result.y = yParse;
+            }
+
+            return result;
+      }
+
+      function doThingThree(){
+        var vals = getValues();
+        // vals.x already parsed as int
+        // vals.y already parsed as int
+        var res = vals.x * vals.y;
+
+        document.getElementById("muli-result").innerHTML = res.toString();
+
+        var desc = "";
+
+        if(vals.x > vals.y){
+            desc = ": X is Geater than Y";
+        }else if(vals.x == vals.y){
+            desc = ": X is Equivelent to Y";
+        }else{
+            desc = ": Y is Greater than X";
+        }
+
+        document.getElementById("multi-result-description").innerHTML = desc;
+      }
+      
+      function getValues(){
+            var result = {
+                x: 0,
+                y: 0
+            };
+
+            var xElm = document.getElementById("input-x");
+            var yElm = document.getElementById("input-y");
+
+            var xParse = Number(xElm.value);
+            if(!isNaN(xParse)){
+                result.x = xParse;
+            }
+
+            var yParse = Number(yElm.value);
+            if(!isNaN(yParse)){
+                result.y = yParse;
+            }
+
+            return result;
+      }
+
+      function doThingFour(){
+        var vals = getValues();
+        // vals.x already parsed as int
+        // vals.y already parsed as int
+        var res = vals.x / vals.y;
+
+        document.getElementById("divide-result").innerHTML = res.toString();
+
+        var desc = "";
+
+        if(vals.x > vals.y){
+            desc = ": X is Geater than Y";
+        }else if(vals.x == vals.y){
+            desc = ": X is Equivelent to Y";
+        }else{
+            desc = ": Y is Greater than X";
+        }
+
+        document.getElementById("divide-result-description").innerHTML = desc;
+      }
+  </script>
+        
+            <div class="top-centered">
+                <p>
+       <img src="Matrix_Digital_rain_banner.gif" alt="banner" width="1000" height="50"/>
+       </p>
+           <br>
+        </div>
+      
+         <form>   
+            
+            First Number - X : <input type="number" id="input-x" /><br>
+            Second Number - Y : <input type="number" id="input-y" /><br>
+                 
+                <input a href="#" class="button" style="vertical-align:middle" type="button" onClick="doThingOne()" Value="Add" />
+                <input a href="#" class="button" style="vertical-align:middle" type="button" onClick="doThingTwo()" Value="Subtract" />
+                <input a href="#" class="button" style="vertical-align:middle" type="button" onClick="doThingThree()" Value="Multiply" />
+                <input a href="#" class="button" style="vertical-align:middle" type="button" onClick="doThingFour()" Value="Divide" />
+                
+                <h3>
+                <br>Addition:
+                <span id="result"></span> <span id="result-description"></span>
+                 <hr>
+                <br>Subtracton:
+                <span id="sub-result"></span> <span id="sub-result-description"></span>
+                <hr>
+                <br>Multiplication:
+                <span id="muli-result"></span> <span id="multi-result-description"></span>
+                <hr>
+                <br>Division:
+                <span id="divide-result"></span> <span id="divide-result-description"></span>
+                </h3>
+               
+                
+        </form>
+            
+
+</body>
+</html>

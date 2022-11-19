@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- 
+        This is My First Style Sheet
+        Author: Blake Cooney
+        Date: 09/26/2021
+        -->
+        <meta charset=utf-8/>
+        
+        <title>First Web Design using a Style Sheet!</title>
+        <link href="mystyle.css" rel="stylesheet" type="text/css" />
+        
+         
+   </head>
+   
+ 
+ <body> 
+      <style>
+           body{
+          background-image: url(Easy Blue Hex.jpg);
+          font-family:Impact, sans-serif;
+    }
+    
+   h1{
+          color:Lime;
+          font-family:Impact, sans-serif;
+          font-size:28px;
+          letter-spacing:20px;
+          text-align:center;
+       }
+   h2{
+          color:Lime;
+          font-family:Impact, sans-serif;
+          font-size:28px;
+          letter-spacing:20px;
+          text-align:center;
+   }
+    p{
+        color:magenta;
+        text-align: center;
+        font-family:Comic Sans MS, sans-serif;
+    }
+    
+    .img{ 
+        background: black;
+    }
+    
+        @media print{
+            body*{
+                visibility: hidden;
+    }
+            .audio {
+                visibility: hidden;
+            }
+            
+            .print-container, .print-container* {
+                visibility: hidden;
+            }
+            
+            .print-container {
+               position: absolute;
+               left: 0px;
+               top: 0px;
+               background: black;
+            }
+            
+            .button {
+                display: center;
+                text-align: center;
+                background-color: black;
+            }
+        }
+      </style>
+       
+        
+ <audio width="250px" height="50px" controls autoplay loop>
+  <source src="Best of Metalstep.mp3" type="audio/ogg">
+  <embed src="Best of Metalstep.mp3" autostart="true" loop="true" hidden="true"> 
+</audio>
+
+    
+       
+    <div class= "row print-container">
+        
+       <h1 class="center" ><img src="Boba Corgi.gif" class="justify" width="150" height="150" loop="infinite" />Welcome to my page!<img src="Boba Corgi.gif" class="justify" width="150" height="150" loop="infinite" /> </h1> 
+       <h1 class="center" > My name is Blake Cooney.</h1>
+       <h1 class="center" > This is a little bit about me.</h1>
+    <p>
+                <p class="center">Although this website is created to provide you my competency, I wanted to add this tidbit so you can get to know me a little more personally.</p>
+                <p class="center">I am currently attending <a href="valenciacollege.edu" target="_blank" style="color: green"><u>Valencia College</u></a> and majoring in Computer Programming/Analysis.
+                <p class="center">My wife and I are looking to start a new chapter, and adventure, in our lives and relocate from Florida. I have recently found my passion in coding and tech.
+                <p class="center">Since then, I have eagerly been learning and doing as much as possible while working full time to make our dreams a reality.
+                <p class="center">I truly believe that this path that I have taken for myself will lead me on to be successful in my endeavors.</p>
+                <p class="center">Aside from work and continuing my education I enjoy building computers, coding, and website development.
+                <p class="center">As well as playing video games, attending concerts, hiking, and hanging out with my three cats. Thank you so much for taking your time to look over this website.
+                <p class="center">If you have any constructive criticism about this website and the presentation of my qualifications, please feel free to contact me via <a href="mailto:blakercooney@gmail.com" target="_blank" style="color: green">E-mail</a>.</p>
+                <p class="center">I would appreciate it as I want to learn how to better myself professionally.</p>
+          
+         
+          
+       <h2 class="center"><img src="Zooting Pug Butt.gif" class="justify" width="150" height="150" loop="infinite"/>Things I enjoy: <img src="Waving Corgi.gif" class="justify" width="150" height="150" loop="infinite" ></h2>
+       
+          <p class="center">I love being out doors! Going hiking in the mountains is what me and my wife like to do for vacations.
+          <p class="center">I enjoy playing video games. I have so many games it is crazy, on multiple consoles, but my favorite is PC by far.</p>
+          <p class="center">I really like coding, it gives me something to keep my brain occupied and producing cool functional programs.</p>
+          <p class="center">I also stream on Twitch in my spaire time. Im not a huge streamer, but I do enjoy it. Can always check me out here:<a href="https://twitch.tv/beepbeep_blake" target="_blank" style="color: #FFFF00">Twitch: @BeepBeep_Blake</a></p>
+          
+ 
+  
+ 
+     
+<footer>
+ <marquee  behavior="scroll" direction="right">        
+          <img src="Running Cogi.gif">
+     </marquee>  
+     
+    
+</footer>    
+              <button class="center" onclick="window.print();" style="background-color:black; border-color:black;">
+         <p class="center">
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <img src="Mic Drop Corgi.gif" height="50%" width="20%"/></p>
+         <p>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         Press Image To Print</p>
+    </button>
+</div>   
+</body>
+</html>

@@ -1,0 +1,54 @@
+*{margin: 0;}
+
+.header {
+    background: black;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 25px;
+    font-family: sans-serif;
+}
+
+.control-panel {
+    background: lightgrey;
+    text-align: right;
+    padding: 8px;
+    font-family: sans-serif;
+}
+
+.languages {
+    background: white;
+    border: 2px solid gray;
+}
+
+#myeditor{ 
+           
+           height: 400px;
+           width: 70%;
+           border: 2px solid gray;
+           padding: 4px;
+
+}
+
+.button-container {
+    text-align: center;
+    padding: 4px;
+    
+}
+
+.btn {
+    background: black;
+    color: lime;
+    padding: 10px;
+    border: 5px;
+}
+
+.output {
+    background: black;
+    padding: 4px;
+    border: 2px solid gray;
+    min-height: 250px;
+    max-width: 70%;
+    resize: none;
+}
